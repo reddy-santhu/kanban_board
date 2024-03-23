@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Switch } from "@headlessui/react";
-import boardIcon from "../assets/icon-board.svg";
+// import boardIcon from "../assets/icon-board.svg";
 import useDarkMode from "../hooks/useDarkMode";
 import darkIcon from "../assets/icon-dark-theme.svg";
 import lightIcon from "../assets/icon-light-theme.svg";
@@ -17,7 +17,7 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
   const [isBoardModalOpen, setIsBoardModalOpen] = useState(false);
   const [colorTheme, setTheme] = useDarkMode();
   const [darkSide, setDarkSide] = useState(
-    colorTheme === "light" ? true : false
+    colorTheme === "light" ? true : false,
   );
 
   const toggleDarkMode = (checked) => {
@@ -62,7 +62,7 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                         dispatch(boardsSlice.actions.setBoardActive({ index }));
                       }}
                     >
-                      <img src={boardIcon} className="  filter-white  h-4 " />{" "}
+                      {/* <img src={boardIcon} className="  filter-white  h-4 " />{" "} */}
                       <p className=" text-lg font-bold ">{board.name}</p>
                     </div>
                   ))}
@@ -73,7 +73,7 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                       setIsBoardModalOpen(true);
                     }}
                   >
-                    <img src={boardIcon} className="   filter-white  h-4 " />
+                    {/* <img src={boardIcon} className="   filter-white  h-4 " /> */}
                     <p className=" text-lg font-bold  ">Create New Board </p>
                   </div>
                 </div>
@@ -85,13 +85,14 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                     checked={darkSide}
                     onChange={toggleDarkMode}
                     className={`${
-                      darkSide ? "bg-[#635fc7]" : "bg-gray-200"
-                    } relative inline-flex h-6 w-11 items-center rounded-full`}
+                      darkSide ? "bg-secondary" : "bg-gray-300" // Use secondary color when dark mode is on
+                    } relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200`} //Added transition
                   >
+                    <span className="sr-only">Enable dark mode</span>
                     <span
                       className={`${
                         darkSide ? "translate-x-6" : "translate-x-1"
-                      } inline-block h-4 w-4 transform rounded-full bg-white transition`}
+                      } inline-block h-4 w-4 transform rounded-full bg-white shadow-md transition-transform duration-200`} //Added shadow and transition
                     />
                   </Switch>
 
@@ -101,7 +102,6 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
             </div>
           )}
 
-          {/* Sidebar hide/show toggle */}
           {isSideBarOpen ? (
             <div
               onClick={() => toggleSidebar()}

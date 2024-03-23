@@ -21,7 +21,7 @@ function Task({ colIndex, taskIndex }) {
   const handleOnDrag = (e) => {
     e.dataTransfer.setData(
       "text",
-      JSON.stringify({ taskIndex, prevColIndex: colIndex })
+      JSON.stringify({ taskIndex, prevColIndex: colIndex }),
     );
   };
 
@@ -33,10 +33,12 @@ function Task({ colIndex, taskIndex }) {
         }}
         draggable
         onDragStart={handleOnDrag}
-        className=" w-[280px] first:my-5 rounded-lg  bg-white  dark:bg-[#2b2c37] shadow-[#364e7e1a] py-6 px-3 shadow-lg hover:text-[#635fc7] dark:text-white dark:hover:text-[#635fc7] cursor-pointer "
+        className="w-[280px] first:my-5 rounded-lg bg-white dark:bg-[#2b2c37] shadow-md hover:shadow-lg hover:text-[#635fc7] dark:text-white dark:hover:text-[#635fc7] cursor-pointer border border-gray-200 dark:border-gray-600 p-4"
       >
-        <p className=" font-bold tracking-wide ">{task.title}</p>
-        <p className=" font-bold text-xs tracking-tighter mt-2 text-gray-500">
+        <p className="font-bold tracking-wide text-base truncate">
+          {task.title}
+        </p>
+        <p className="font-semibold text-xs mt-2 text-gray-500 dark:text-gray-400">
           {completed} of {subtasks.length} completed tasks
         </p>
       </div>

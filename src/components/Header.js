@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo-mobile.svg";
+// import Logo from "../assets/logo-mobile.svg";
 import iconDown from "../assets/icon-chevron-down.svg";
 import iconUp from "../assets/icon-chevron-up.svg";
 import elipsis from "../assets/icon-vertical-ellipsis.svg";
@@ -19,7 +19,7 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
   const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
 
   const dispatch = useDispatch();
-  
+
   const boards = useSelector((state) => state.boards);
   const board = boards.find((board) => board.isActive);
 
@@ -53,9 +53,9 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
       <header className=" flex justify-between dark:text-white items-center  ">
         {/* Left Side  */}
         <div className=" flex items-center space-x-2  md:space-x-4">
-          <img src={Logo} alt=" Logo " className=" h-6 w-6" />
+          {/* <img src={Logo} alt=" Logo " className=" h-6 w-6" /> */}
           <h3 className=" md:text-4xl  hidden md:inline-block font-bold  font-sans">
-            kanban
+            WorkSpace
           </h3>
           <div className=" flex items-center ">
             <h3 className=" truncate max-w-[200px] md:text-2xl text-xl font-bold md:ml-20 font-sans  ">
@@ -93,7 +93,7 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
           <img
             onClick={() => {
               setBoardType("edit");
-              setOpenDropdown(false)
+              setOpenDropdown(false);
               setIsElipsisMenuOpen((prevState) => !prevState);
             }}
             src={elipsis}

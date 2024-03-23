@@ -1,0 +1,433 @@
+{
+  "boards": [
+    {
+      "name": "Project: New Horizon",
+      "isActive": false,
+      "columns": [
+        {
+          "name": "Todo",
+          "tasks": [
+            {
+              "title": "Frontend: User Onboarding",
+              "description": "Develop the interface for the onboarding experience.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Design: Sign-up Page",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Code: Sign-in Page",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Implement: Welcome Screen",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Global Search Functionality",
+              "description": "Implement application-wide search capabilities.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Develop: Search UI",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "User Settings Interface",
+              "description": "Create settings panel for user customization.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Design: Account Settings",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Code: Billing Management",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Comprehensive Testing and QA",
+              "description": "Rigorously test all user flows for stability and functionality.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Internal Testing",
+                  "isCompleted": false
+                },
+                {
+                  "title": "External Beta Program",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Doing",
+          "tasks": [
+            {
+              "title": "UI Design: Settings & Search",
+              "description": "Designing interfaces for user customization and information retrieval.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Settings - Account Management",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Settings - Billing Information",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Search Page Design",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Backend: Account Management API",
+              "description": "Developing endpoints for user account control.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Implement: Upgrade Plan",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Implement: Cancel Plan",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Implement: Update Payment",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Design: Onboarding Flow",
+              "description": "Planning the first-time user experience.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Design: Sign-up Page",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Design: Sign-in Page",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Refine: Welcome Page",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Backend: Search API Development",
+              "description": "Create endpoints for the application's search functionality.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Implement: Search Endpoint",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Define: Search Filters",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Security: Authentication API",
+              "description": "Building endpoints for user authentication and authorization.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Define: User Data Model",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Implement: Auth Endpoints",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Market Research: Pricing Strategy",
+              "description": "Analyzing competitor prices to determine appropriate pricing models.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Analyze: Competitor Pricing",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Outline: Business Model",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Customer: Feedback on Pricing",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Done",
+          "tasks": [
+            {
+              "title": "Usability Tests: Wireframes",
+              "description": "Conduct user tests to ensure usability.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Complete: Wireframe Prototype Tests",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Create: Wireframe Prototype",
+              "description": "Develop a clickable wireframe to test the assumptions.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Create: Clickable Wireframe (Balsamiq)",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Usability Review and Iteration",
+              "description": "Analyze test feedback and implement changes.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Meet: Review Test Notes",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Modify: Paper Prototypes",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Conduct: Usability Tests",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Develop: Paper Prototypes",
+              "description": "Create prototypes and conduct tests with potential customers.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Create: Paper Prototypes for V1",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Complete: Usability Tests (x10)",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Market Research: Discovery",
+              "description": "Define core product through interviews with potential customers.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Interview: Prospective Customers (x10)",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Market Analysis: Competitors",
+              "description": "Identify and analyze competitors in the market.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Identify: Competitors",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Conduct: SWOT Analysis",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Industry Market Research",
+              "description": "Gather industry data and evaluate market size.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Write: Research Analysis",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Calculate: Total Addressable Market (TAM)",
+                  "isCompleted": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Go-To-Market Strategy",
+      "isActive": false,
+      "columns": [
+        {
+          "name": "Todo",
+          "tasks": [
+            {
+              "title": "Product Hunt: Launch Planning",
+              "description": "Planning the launch on Product Hunt to maximize exposure.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Find: Product Hunter",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Gather: Marketing Assets",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Draft: Product Page",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Notify: Customers",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Notify: Network",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Launch!",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Share on Show HN",
+              "description": "Prepare a post to share on Hacker News' Show HN forum.",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Draft: HN Post",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Get: Feedback and Refine",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish: Post",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Write Launch Article",
+              "description": "Compose articles for various publishing platforms.",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Write: Article",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish: LinkedIn",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish: Indie Hackers",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish: Medium",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Doing",
+          "tasks": []
+        },
+        {
+          "name": "Done",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "name": "Project: Future Outlook",
+      "isActive": false,
+      "columns": [
+        {
+          "name": "Now",
+          "tasks": [
+            {
+              "title": "V1 Launch",
+              "description": "Launch the first version of the product to the public.",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Launch: Private Waitlist",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Launch: Public on PH, HN, etc.",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Review Early Adopter Feedback",
+              "description": "Gather data and plan the next development cycle based on initial customer input.",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Interview: Early Adopters (x10)",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Review: Pain Points and Suggestions",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Outline: Next Steps",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Next",
+          "tasks": []
+        },
+        {
+          "name": "Later",
+          "tasks": []
+        }
+      ]
+    }
+  ]
+}
